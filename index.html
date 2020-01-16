@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Make a Meme</title>
+  </head>
+  <body>
+    <div class="generator-wrapper">
+      <h1>Make a Meme</h1>
+      <h3>Fill out the form to start creating memes!</h3>
+      <div id="form">
+        <form action="#" id="new-meme-form">
+          <div>
+            <p>
+              Image URL
+              <input
+                type="url"
+                name="url"
+                id="image"
+                class="form-input"
+                placeholder="What's the URL for your meme?"
+                autofocus
+              />
+            </p>
+          </div>
+          <div>
+            <p>
+              Top Text
+              <input
+                type="text"
+                name="top"
+                id="top-text"
+                class="form-input"
+                placeholder="(Optional) What text do you want at the top of your meme?"
+              />
+            </p>
+          </div>
+          <div>
+            <p>
+              Bottom Text
+              <input
+                type="text"
+                name="bottom"
+                id="bottom-text"
+                class="form-input"
+                placeholder="(Optional) What text do you want at the bottom of your meme?"
+              />
+            </p>
+          </div>
+          <input type="submit" value="Add Meme" class="submit" />
+        </form>
+      </div>
+    </div>
+    <div><h3>Click on meme to remove</h3></div>
+    <div id="meme-container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
